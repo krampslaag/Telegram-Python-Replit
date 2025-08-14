@@ -1,0 +1,39 @@
+# Project Structure Overview
+"""
+bikera-mining-bot/
+├── main.py                      # Entry point
+├── requirements.txt             # Dependencies
+├── .env.example                # Environment variables template
+├── README.md                   # Documentation
+├── config/
+│   ├── __init__.py
+│   └── settings.py             # Configuration settings
+├── core/
+│   ├── __init__.py
+│   ├── blockchain.py           # Blockchain implementation
+│   ├── mining.py               # Mining intervals and logic
+│   ├── crypto.py               # Encryption and VRF
+│   └── utils.py                # Utility functions
+├── network/
+│   ├── __init__.py
+│   ├── p2p.py                  # P2P networking layer
+│   ├── consensus.py            # Consensus mechanisms
+│   └── node.py                 # Network node implementation
+├── bot/
+│   ├── __init__.py
+│   ├── handlers.py             # Telegram command handlers
+│   ├── conversations.py        # Conversation handlers
+│   └── telegram_bot.py         # Main bot class
+├── storage/
+│   ├── __init__.py
+│   ├── location_logger.py      # Location logging and management
+│   └── data_manager.py         # Data persistence
+├── data/                       # Data directory (created at runtime)
+│   ├── blockchain.json
+│   ├── user_data.json
+│   └── user_logs/
+└── logs/                       # Log files (created at runtime)
+    └── blockchain_bot.log
+"""
+
+# File contents follow below...

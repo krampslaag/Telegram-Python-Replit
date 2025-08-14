@@ -1,0 +1,14 @@
+[
+  {
+    "timestamp": 1751901493.8736684,
+    "data": "Genesis Block - Bikera Mining Bot",
+    "previous_hash": "0",
+    "hash": "802c31ed0e30532d8958228abdc683990f0d8f03bf1c7a82538ac12b1812682c",
+    "target_distance": null,
+    "winner_id": null,
+    "travel_distance": null,
+    "miner_address": null,
+    "block_height": 0,
+    "reward": 1.0
+  }
+]

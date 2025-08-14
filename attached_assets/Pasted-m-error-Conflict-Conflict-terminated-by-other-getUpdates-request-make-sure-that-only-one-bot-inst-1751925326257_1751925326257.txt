@@ -1,0 +1,53 @@
+m.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+07-07 23:53:15
+2025-07-07 21:53:15,970 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7709050722:AAHlO8wju9uWZGp0KLO2-qga8aKRhqhGzG8/getUpdates "HTTP/1.1 409 Conflict"
+07-07 23:53:15
+2025-07-07 21:53:15,971 - telegram.ext.Updater - ERROR - Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+07-07 23:53:15
+2025-07-07 21:53:15,971 - telegram.ext.Updater - ERROR - Exception happened while polling for updates.
+07-07 23:53:15
+Traceback (most recent call last):
+07-07 23:53:15
+File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/telegram/ext/_updater.py", line 688, in _network_loop_retry
+07-07 23:53:15
+if not await action_cb():
+07-07 23:53:15
+^^^^^^^^^^^^^^^^^
+07-07 23:53:15
+File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/telegram/ext/_updater.py", line 384, in polling_action_cb
+07-07 23:53:15
+raise exc
+07-07 23:53:15
+File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/telegram/ext/_updater.py", line 373, in polling_action_cb
+07-07 23:53:15
+updates = await self.bot.get_updates(
+07-07 23:53:15
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+07-07 23:53:15
+File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/telegram/ext/_extbot.py", line 558, in get_updates
+07-07 23:53:15
+updates = await super().get_updates(
+07-07 23:53:15
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+07-07 23:53:15
+File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/telegram/_bot.py", line 525, in decorator
+07-07 23:53:15
+result = await func(self, *args, **kwargs) # skipcq: PYL-E1102
+07-07 23:53:15
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+07-07 23:53:15
+File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/telegram/_bot.py", line 3584, in get_updates
+07-07 23:53:15
+await self._post(
+07-07 23:53:15
+File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/telegram/_bot.py", line 613, in _post
+07-07 23:53:15
+return await self._do_post(
+07-07 23:53:15
+^^^^^^^^^^^^^^^^^^^^
+07-07 23:53:15
+File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/telegram/ext/_extbot.py", line 340, in _do_post
+07-07 23:53:15
+return await super()._do_post(
+07-07 23:53:15
+^^^^^^^^^^^^^^^^^^^^^^^

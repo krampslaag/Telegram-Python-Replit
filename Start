@@ -1,0 +1,15 @@
+#!/bin/bash
+# Deployment script for Bikera Mining Bot
+# This script is called by the deployment configuration
+
+# Build frontend for production if dist doesn't exist
+if [ ! -d "dist" ]; then
+    echo "Building frontend..."
+    cd client && npm run build && cd ..
+fi
+
+# For deployment, we run the Python backend on the PORT provided by Cloud Run
+# The frontend is served statically from the Python app in production
+export PRODUCTION=true
+export PORT=500
+exec python start.py
